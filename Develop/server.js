@@ -18,8 +18,15 @@ app.use(require('./routes/view.js'));
 app.use(require('./routes/api.js'));
 
 // Connect to Mongoose
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workoutdb", { useNewUrlParser: true });
-
+mongoose.connect(
+  process.env.MONGODB_URI || 'mongodb://localhost/workoutdb',
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+    useFindAndModify: false
+  }
+);
 // Listen for PORT
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);
