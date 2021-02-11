@@ -13,7 +13,7 @@ As a user, the ability to create and track daily workouts is provided utilizing 
 3. Complete and update the various workouts of the user and depict the status through charts/graphs
 4. A screenshot and link are provided to preview the application
 
-![Preview](assets/preview.jpg)<br>
+![Preview](Assets/preview.jpg)<br>
 [Fitness Tracker](https://whispering-chamber-49381.herokuapp.com/)
 
 ## Technology Used
